@@ -8,7 +8,7 @@ from Rudra.misc import SUDOERS
 
 
 
-BOT_LIST = ["HinaBot", "RudraTEAMBOT"]
+BOT_LIST = ["HINATA_VC_BOT"]
 
 
 
