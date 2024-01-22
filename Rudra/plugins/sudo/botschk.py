@@ -8,7 +8,7 @@ from Rudra.misc import SUDOERS
 
 
 
-BOT_LIST = ["SofiaBot", "RudraTEAMBOT"]
+BOT_LIST = ["HinaBot", "RudraTEAMBOT"]
 
 
 
