@@ -26,14 +26,14 @@ async def sg(client: Client, message: Message):
     sg = random.choice(bo)
     if 1 in assistants:
         ubot = us.one
-
+    
     try:
         a = await ubot.send_message(sg, f"{user.id}")
         await a.delete()
     except Exception as e:
         return await lol.edit(e)
     await asyncio.sleep(1)
-
+    
     async for stalk in ubot.search_messages(a.chat.id):
         if stalk.text == None:
             continue
@@ -42,11 +42,12 @@ async def sg(client: Client, message: Message):
         elif stalk:
             await message.reply(f"{stalk.text}")
             break  # Exit the loop after displaying one message
-
+    
     try:
         user_info = await ubot.resolve_peer(sg)
         await ubot.send(DeleteHistory(peer=user_info, max_id=0, revoke=True))
     except Exception:
         pass
-
+    
     await lol.delete()
+    
