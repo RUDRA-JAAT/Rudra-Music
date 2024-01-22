@@ -14,6 +14,7 @@ apscheduler
 motor==3.0.0
 pillow==10.0.0
 psutil
+qrcode
 wget
 pyfiglet
 future==0.18.3
