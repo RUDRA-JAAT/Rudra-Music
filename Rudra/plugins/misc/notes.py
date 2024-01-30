@@ -4,7 +4,7 @@ from pyrogram import filters
 from Rudra.utils.Rudra_ban import admin_filter
 from Rudra.mongo.notesdb import *
 from Rudra.utils.notes_func import GetNoteMessage, exceNoteMessageSender, privateNote_and_admin_checker
-from Rudra.utils.yumidb import user_admin
+from Rudra.utils.Hinadb import user_admin
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup , Message , CallbackQuery
 from pyrogram.enums import ChatMemberStatus
 
