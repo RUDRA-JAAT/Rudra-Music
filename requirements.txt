@@ -13,7 +13,6 @@ dnspython
 ffmpeg-python
 gitpython
 hachoir
-Faker
 pydub
 pycountry
 heroku3
