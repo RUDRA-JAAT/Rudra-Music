@@ -1,26 +1,20 @@
-from Rudra.misc import db
-from Rudra.utils.database import get_assistant, get_authuser_names, get_cmode
-
 import asyncio
-import config
 import random
-import asyncio
-from datetime import datetime
-from pyrogram.enums import ChatType
-from Rudra.core.call import Rudra
-from Rudra.logging import LOGGER
-from config import *
-from pyrogram import filters
-from Rudra import app 
-from Rudra import app, userbot
-from Rudra.core.userbot import Client
+
+from pyrogram import Client, filters
+from pyrogram.types import Message
+from pyrogram.raw.functions.messages import DeleteHistory
+
+from Rudra import userbot as us, app
+from Rudra.core.userbot import assistants
+from config import*
+import config 
 from Rudra.misc import SUDOERS
+from Rudra.core.userbot import *
+from Rudra import app
 
 
-
-
-
-BOT_LIST = ["HINATA_VC_BOT"]
+BOT_LIST = ["HINATA_GROUP_CHAT_BOT", "HINATA_VC_BOT"]
 
 
 
@@ -44,5 +38,5 @@ async def bots_chk(app, message):
                     response += f"╭⎋ [{bot.first_name}](tg://user?id={bot.id})\n╰⊚ **sᴛᴀᴛᴜs: ᴏғғʟɪɴᴇ ❄**\n\n"
         except Exception:
             response += f"╭⎋ {bot_username}\n╰⊚ **sᴛᴀᴛᴜs: ᴇʀʀᴏʀ ❌**\n"
-    
+
     await msg.edit_text(response)
