@@ -16,7 +16,7 @@ def get_states(client, message):
         states_message = f"States of {country_name}:\n" + "\n".join(states_list)
     except IndexError:
         # No country name was provided
-        states_message = "Please provide a country name after the command, like this:\n/get_states Canada"
+        states_message = "Please provide a country name after the command, like this:\n/get_states India"
     except AttributeError:
         # The country was not found
         states_message = f"I couldn't find the country '{country_name}'. Please make sure it's spelled correctly."
