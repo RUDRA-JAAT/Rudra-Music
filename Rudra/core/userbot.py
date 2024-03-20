@@ -51,9 +51,9 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("HEROKUFREECC")
+                await self.one.join_chat("RUDRA_JAAT_BIO")
               
-                await self.one.join_chat("ALLTYPECC")
+                await self.one.join_chat("RUDRA_JAAT_BIO")
             except:
                 pass
             assistants.append(1)
@@ -74,9 +74,9 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("HEROKUFREECC")
+                await self.two.join_chat("RUDRA_JAAT_BIO")
                 
-                await self.one.join_chat("ALLTYPECC")
+                await self.one.join_chat("RUDRA_JAAT_BIO")
             except:
                 pass
             assistants.append(2)
